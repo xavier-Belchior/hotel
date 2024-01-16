@@ -1,0 +1,79 @@
+
+/*RESET*/
+*{margin: 0;padding: 0;border:none;outline:none;font-size: 100%;font-family:'tahoma',sans-serif;font-weight: normal;box-sizing: border-box;}
+a{text-decoration: none;cursor: pointer;opacity:0.9;}
+a:hover{opacity:1;}
+img{max-width: 100%;}
+nav, ul{list-style: none;}
+/*HEADER*/
+header{width: 100%;background-color: #fff;position: absolute;top: 0;left: 0;display: flex;justify-content: space-between;align-items: center;padding: 20px 50px;}
+header img{width:200px;}
+header nav{display:flex;}
+header li a{color: #191c03;}
+header li{margin: 0 15px;}
+header li:first-child{margin-left: 0;}
+header li:last-child{margin-right: 0;}
+/*BREAKPOINTS - PHONE AND TABLETS*/
+@media (max-width:700px){
+	header{flex-direction: column;}
+	header img{margin-bottom:15px;}
+}
+/*HERO*/
+.hero{background-image: url(../img/hero.jpg);background-size: cover;min-height:100vh;color: #fff;
+display:flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;}
+.hero h1{font-size: 3.5rem;margin-bottom: 15px;}
+.hero h3{font-size: 2rem;margin-bottom: 15px;}
+.hero .btn{text-transform:uppercase;border-radius:5px;background-color: #fff;color: #191c03;padding: 20px 50px;}
+/*BREAKPOINTS - PHONE AND TABLETS*/
+@media (max-width:700px){
+	.hero h1{font-size: 2.5rem;}
+	.hero h3{font-size: 1.5rem;}
+}
+/*CONHEÇA O HOTEL PARAÍSO*/
+.conheca-o-hotel{display: flex;flex-direction: column;padding: 100px 50px;align-items:center;}
+.conheca-o-hotel h3{font-size: 2rem;margin-bottom: 35px;color: #191c03;}
+.conheca-o-hotel p{max-width: 800px;margin-bottom: 35px;color: #191c03;text-align: center;}
+.conheca-o-hotel hr{width:200px;height: 2px;background-color: #191c03;margin-bottom: 70px;}
+.conheca-o-hotel .grid{width: 100%;display: flex;flex-wrap:wrap;}
+.conheca-o-hotel .grid li{height: 350px;border-radius: 4px;padding: 20px;background-clip: content-box;background-size: cover;background-position: center;}
+.conheca-o-hotel .grid li.small{flex-basis:40%;}
+.conheca-o-hotel .grid li.large{flex-basis:60%;}
+/*BREAKPOINTS - PHONE AND TABLETS*/
+@media (max-width:700px){
+.conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large{flex-basis:100%;}
+}
+/*CARACTERISTICA*/
+.carateristica{text-align:center;background-color:#191c03; display: flex;flex-direction: column;padding: 100px 50px;align-items:center;}
+.carateristica h3{font-size: 2rem;margin-bottom: 35px;color: #fff;}
+.carateristica p{max-width: 800px;margin-bottom: 35px;color: #fff;text-align: center;}
+.carateristica hr{width:200px;height: 2px;background-color: #fff;margin-bottom: 70px;}
+
+.carateristica .grid{width: 100%;display: flex;}
+.carateristica .grid li{padding: 0 30px; text-align: center;}
+.carateristica .grid li i{font-size: 3.5rem;margin-bottom: 30px;color: #c3c63b;}
+.carateristica .grid li h4{font-size: 1.4rem;color: #c3c63b;margin-bottom: 30px;}
+.carateristica .grid li p{color: #fff;} 
+/*BREAKPOINTS - PHONE AND TABLETS*/
+@media (max-width:850px){
+.carateristica 	.grid{flex-direction: column;}
+}
+/*NEWSLETTER*/
+.newsletter{display: flex;flex-direction: column;padding: 100px 50px;align-items: center;}
+.newsletter h3{font-size: 2rem;margin-bottom: 35px;color: #c3c63b;}
+.newsletter p{max-width: 800px;margin-bottom: 35px;color: #c3c63b;text-align: center;}
+.newsletter hr{width:200px;height: 2px;background-color: #c3c63b;margin-bottom: 70px;}
+
+.newsletter form{display: flex;flex-wrap: wrap;width: 80%;justify-content: center;align-items:center;max-width: 800px;}
+.newsletter input{padding: 15px;border:1px solid#c3c63b;border-radius:5px;margin-right:15px;flex:1; }
+.newsletter button{padding: 15px;background-color: #c3c63b;color:#fff;text-transform: uppercase;cursor:pointer;border-radius: 5px}
+/*BREAKPOINTS - PHONE AND TABLETS*/
+@media (max-width:700px){
+ .newsletter input{flex-bais:100%;margin-bottom: 15px;}
+}
+/*RODAPÉ*/
+footer{display: flex;flex-direction: column;background-color: #191c03;padding: 50px 50px;align-items: center;}
+footer ul{display: flex;margin-bottom: 25px;}
+footer ul li{margin-right: 5px;}
+footer ul li:last-child{margin-right: 0;}
+footer ul li a{color: #c3c63b;font-size: 2rem;}
+footer p{color: #c3c63b;text-align: center;}
